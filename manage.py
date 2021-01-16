@@ -1,5 +1,7 @@
 import logging
 
+from views import *
+
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -21,4 +23,5 @@ def load_environment():
 
 if __name__ == "__main__":
     load_environment()
+    initial_database()
 
