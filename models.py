@@ -41,7 +41,7 @@ class House(Model):
 
 class Car(Model):
     user = ForeignKeyField(User, backref="cars")
-    Plaquecar = CharField(primary_key=True, unique=True, max_length=128)
+    plaque = CharField(primary_key=True, unique=True, max_length=128)
     model = CharField(max_length=128, null=True)
     color = CharField(max_length=128, null=True)
 

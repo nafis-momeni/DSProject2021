@@ -1,4 +1,5 @@
 import logging
+import sys
 
 from views import *
 
@@ -24,4 +25,7 @@ def load_environment():
 if __name__ == "__main__":
     load_environment()
     initial_database()
+
+    if "--load-data" in sys.argv:
+        fill_data_from_csv()
 
