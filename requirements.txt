@@ -1,0 +1,4 @@
+peewee==3.14.0
+python-dotenv==0.15.0
+
+Faker~=5.6.1
