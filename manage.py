@@ -29,3 +29,5 @@ if __name__ == "__main__":
     if "--load-data" in sys.argv:
         fill_data_from_csv()
 
+    find_users_who_took_bribes()
+
