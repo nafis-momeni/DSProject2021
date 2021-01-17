@@ -3,6 +3,7 @@ import sys
 
 from views import *
 from views.destroy_database import destroy_database
+from views.find_users_who_took_money import find_users_who_took_money
 
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -30,7 +31,8 @@ if __name__ == "__main__":
     if "--load-data" in sys.argv:
         fill_data_from_csv()
 
-    find_users_who_took_bribes()
+    users_who_took_bribes = find_users_who_took_bribes()
+    users_who_took_money = find_users_who_took_money(users_who_took_bribes)
 
     if "--remove-db" in sys.argv:
         destroy_database()

@@ -43,3 +43,4 @@ def find_users_who_took_bribes():
         )
     print(f"⭕️ Totally {len(users_who_took_bribes)} users has been took bribes.\n")
 
+    return users_who_took_bribes
