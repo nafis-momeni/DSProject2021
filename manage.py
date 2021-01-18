@@ -33,6 +33,7 @@ if __name__ == "__main__":
 
     users_who_took_bribes = find_users_who_took_bribes()
     users_who_took_money = find_users_who_took_money(users_who_took_bribes)
+    find_users_who_have_been_called_by_smugglers(users_who_took_money)
 
     if "--remove-db" in sys.argv:
         destroy_database()
