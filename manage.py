@@ -5,9 +5,6 @@ from views import *
 from views.destroy_database import destroy_database
 from views.find_users_who_took_money import find_users_who_took_money
 
-logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
-logger = logging.getLogger(__name__)
-
 
 def load_environment():
     from dotenv import load_dotenv

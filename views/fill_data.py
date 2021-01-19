@@ -82,7 +82,7 @@ def fill_data_from_csv():
         line_count = 0
         for row in csv_reader:
             if line_count != 0:
-                if row[1].replace("-", "").isnumeric():
+                if row[1].isnumeric():
                     Deed.create(
                         user=User.get(User.national_id == row[0]),
                         house=House.get(House.postal_code == row[1]),
